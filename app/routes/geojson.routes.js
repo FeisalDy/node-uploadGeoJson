@@ -11,5 +11,9 @@ module.exports = app => {
 
   router.delete('/', geojson.deleteAll)
 
+  router.post('/kota', geojson.uploadKota)
+
+  router.get('/kota', geojson.findKota)
+
   app.use('/api/geojson', router)
 }
