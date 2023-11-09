@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      },
+      "properties": {
+        "kode_prov": "32",
+        "provinsi": "Jawa Barat",
+        "fid": "32",
+        "nama": "Provinsi Jawa Barat",
+        "label": "Provinsi Jawa Barat, 32, 32"
+      }
+    }
+  ]
+}
