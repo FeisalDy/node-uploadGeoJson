@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      },
+      "properties": {
+        "kode_prov": "33",
+        "provinsi": "Jawa Tengah",
+        "fid": "33",
+        "nama": "Provinsi Jawa Tengah",
+        "label": "Provinsi Jawa Tengah, 33, 33"
+      }
+    }
+  ]
+}
