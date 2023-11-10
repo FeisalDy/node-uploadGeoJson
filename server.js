@@ -25,15 +25,29 @@ app.listen(PORT, () => {
 })
 
 const db = require('./app/models')
-db.mongoose
-  .connect(db.url, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  })
-  .then(() => {
-    console.log('Konek db coy')
-  })
-  .catch(err => {
-    console.log('error cok db ne', err)
-    process.exit()
-  })
+// db.mongoose
+//   .connect(db.url, {
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true
+//   })
+//   .then(() => {
+//     console.log('Konek db coy')
+//   })
+//   .catch(err => {
+//     console.log('error cok db ne', err)
+//     process.exit()
+//   })
+setTimeout(() => {
+  db.mongoose
+    .connect(db.url, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    })
+    .then(() => {
+      console.log('Konek db coy')
+    })
+    .catch(err => {
+      console.log('error cok db ne', err)
+      process.exit()
+    })
+}, 10000)
