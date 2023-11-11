@@ -12,7 +12,7 @@ RUN npm install
 #Copy source files
 COPY . .
 
-#RUN npm run build
+# RUN npm run build
 
 EXPOSE 8080
 
