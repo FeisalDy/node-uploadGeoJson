@@ -1,0 +1,19 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": []
+      },
+      "properties": {
+        "kode_prov": "35",
+        "provinsi": "Jawa Timur",
+        "fid": "35",
+        "nama": "Provinsi Jawa Timur",
+        "label": "Provinsi Jawa Timur, 35, 35"
+      }
+    }
+  ]
+}
