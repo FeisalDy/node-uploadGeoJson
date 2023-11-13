@@ -1,19 +1,13 @@
 FROM node:18
 
-#Working dir
-WORKDIR /usr/src/app
+WORKDIR /app
 
-#copy package.json
-COPY package*.json ./
+COPY package.json .
 
-RUN npm install prettier -g
 RUN npm install
 
-#Copy source files
-COPY . .
+COPY . ./
 
-# RUN npm run build
+EXPOSE 3000
 
-EXPOSE 8080
-
-CMD ["node", "server.js"]
+CMD [ "npm", "start" ]

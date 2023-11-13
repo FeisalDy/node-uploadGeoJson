@@ -1,8 +1,14 @@
-version: '3'
+version: "3"
 services:
-  app:
+  web:
     build: .
     ports:
-      - "8080:8080"
-    volumes:
-      - .:/usr/src/app
+      - "8082:8082"
+    depends_on:
+      - mongo
+    links:
+      - mongo
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
